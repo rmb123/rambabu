@@ -13,9 +13,15 @@
 		48FD45481EDC640E00CCB73E /* Zomato.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48FD45461EDC640E00CCB73E /* Zomato.xcdatamodeld */; };
 		48FD454A1EDC640E00CCB73E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48FD45491EDC640E00CCB73E /* Assets.xcassets */; };
 		48FD454D1EDC640E00CCB73E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48FD454B1EDC640E00CCB73E /* LaunchScreen.storyboard */; };
+		48FD45551EDC6C3A00CCB73E /* AFWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FD45541EDC6C3A00CCB73E /* AFWrapper.swift */; };
+		48FD45581EDC868E00CCB73E /* zomato_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 48FD45561EDC868E00CCB73E /* zomato_logo.png */; };
+		48FD45591EDC868E00CCB73E /* zomato.png in Resources */ = {isa = PBXBuildFile; fileRef = 48FD45571EDC868E00CCB73E /* zomato.png */; };
+		48FD455B1EDC87F100CCB73E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FD455A1EDC87F000CCB73E /* WebViewController.swift */; };
+		9570B54AF045F8FA3B41A4B0 /* Pods_Zomato.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3354C75AE619A79F6216E155 /* Pods_Zomato.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3354C75AE619A79F6216E155 /* Pods_Zomato.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zomato.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48FD453C1EDC640E00CCB73E /* Zomato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zomato.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48FD453F1EDC640E00CCB73E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48FD45411EDC640E00CCB73E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +30,12 @@
 		48FD45491EDC640E00CCB73E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48FD454C1EDC640E00CCB73E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48FD454E1EDC640E00CCB73E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48FD45541EDC6C3A00CCB73E /* AFWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFWrapper.swift; sourceTree = "<group>"; };
+		48FD45561EDC868E00CCB73E /* zomato_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zomato_logo.png; sourceTree = "<group>"; };
+		48FD45571EDC868E00CCB73E /* zomato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zomato.png; sourceTree = "<group>"; };
+		48FD455A1EDC87F000CCB73E /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		5524E220E74D9A236DCAFA19 /* Pods-Zomato.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zomato.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zomato/Pods-Zomato.release.xcconfig"; sourceTree = "<group>"; };
+		97CD2814DB4E643ADCDCFB6D /* Pods-Zomato.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zomato.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zomato/Pods-Zomato.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9570B54AF045F8FA3B41A4B0 /* Pods_Zomato.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B3AAFCA11061E36F7E2D951 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3354C75AE619A79F6216E155 /* Pods_Zomato.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		48FD45331EDC640E00CCB73E = {
 			isa = PBXGroup;
 			children = (
 				48FD453E1EDC640E00CCB73E /* Zomato */,
 				48FD453D1EDC640E00CCB73E /* Products */,
+				F6EC3BAA3128033CD97E0295 /* Pods */,
+				1B3AAFCA11061E36F7E2D951 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +80,11 @@
 			isa = PBXGroup;
 			children = (
 				48FD453F1EDC640E00CCB73E /* AppDelegate.swift */,
+				48FD45541EDC6C3A00CCB73E /* AFWrapper.swift */,
 				48FD45411EDC640E00CCB73E /* ViewController.swift */,
+				48FD455A1EDC87F000CCB73E /* WebViewController.swift */,
+				48FD45561EDC868E00CCB73E /* zomato_logo.png */,
+				48FD45571EDC868E00CCB73E /* zomato.png */,
 				48FD45431EDC640E00CCB73E /* Main.storyboard */,
 				48FD45491EDC640E00CCB73E /* Assets.xcassets */,
 				48FD454B1EDC640E00CCB73E /* LaunchScreen.storyboard */,
@@ -67,6 +94,15 @@
 			path = Zomato;
 			sourceTree = "<group>";
 		};
+		F6EC3BAA3128033CD97E0295 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97CD2814DB4E643ADCDCFB6D /* Pods-Zomato.debug.xcconfig */,
+				5524E220E74D9A236DCAFA19 /* Pods-Zomato.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48FD45511EDC640E00CCB73E /* Build configuration list for PBXNativeTarget "Zomato" */;
 			buildPhases = (
+				92EA30F2EBF392288F664348 /* [CP] Check Pods Manifest.lock */,
 				48FD45381EDC640E00CCB73E /* Sources */,
 				48FD45391EDC640E00CCB73E /* Frameworks */,
 				48FD453A1EDC640E00CCB73E /* Resources */,
+				E4419F631B7261DC92863D01 /* [CP] Embed Pods Frameworks */,
+				8CA387E3187A3BB18D4159AA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,13 +165,63 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48FD45581EDC868E00CCB73E /* zomato_logo.png in Resources */,
 				48FD454D1EDC640E00CCB73E /* LaunchScreen.storyboard in Resources */,
 				48FD454A1EDC640E00CCB73E /* Assets.xcassets in Resources */,
+				48FD45591EDC868E00CCB73E /* zomato.png in Resources */,
 				48FD45451EDC640E00CCB73E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8CA387E3187A3BB18D4159AA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zomato/Pods-Zomato-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92EA30F2EBF392288F664348 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E4419F631B7261DC92863D01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zomato/Pods-Zomato-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		48FD45381EDC640E00CCB73E /* Sources */ = {
@@ -141,6 +230,8 @@
 			files = (
 				48FD45421EDC640E00CCB73E /* ViewController.swift in Sources */,
 				48FD45401EDC640E00CCB73E /* AppDelegate.swift in Sources */,
+				48FD45551EDC6C3A00CCB73E /* AFWrapper.swift in Sources */,
+				48FD455B1EDC87F100CCB73E /* WebViewController.swift in Sources */,
 				48FD45481EDC640E00CCB73E /* Zomato.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +353,7 @@
 		};
 		48FD45521EDC640E00CCB73E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97CD2814DB4E643ADCDCFB6D /* Pods-Zomato.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Zomato/Info.plist;
@@ -274,6 +366,7 @@
 		};
 		48FD45531EDC640E00CCB73E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5524E220E74D9A236DCAFA19 /* Pods-Zomato.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Zomato/Info.plist;
@@ -303,6 +396,7 @@
 				48FD45531EDC640E00CCB73E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
